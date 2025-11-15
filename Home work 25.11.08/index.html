@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания по JavaScript</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 400px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tasks button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: none;
+            background: #e5e5e5;
+            font-size: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .tasks button:hover {
+            background: #d3d3d3;
+        }
+        .output {
+            margin-top: 20px;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 40px;
+            border: 1px solid #ddd;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Введение в JavaScript — Задания</h1>
+        <div class="tasks">
+            <button onclick="loadTask(1)">1. Определение возраста</button>
+            <button onclick="loadTask(2)">2. Символ клавиши</button>
+            <button onclick="loadTask(3)">3. Одинаковые цифры</button>
+            <button onclick="loadTask(4)">4. Высокосный год</button>
+            <button onclick="loadTask(5)">5. Палиндром</button>
+            <button onclick="loadTask(6)">6. Конвертер валют</button>
+            <button onclick="loadTask(7)">7. Скидка</button>
+            <button onclick="loadTask(8)">8. Круг в квадрат</button>
+            <button onclick="loadTask(9)">9. Викторина</button>
+            <button onclick="loadTask(10)">10. Следующая дата</button>
+        </div>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
