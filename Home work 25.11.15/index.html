@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Список покупок</title>
+  <style>
+    *{
+        box-sizing:border-box
+    }
+    body{
+        margin:0;
+        font-family:Inter,Arial,Helvetica;
+        background:#f5f7fb;
+        color:#111;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:100vh
+    }
+    .wrap{
+        width:420px;
+        background:#fff;
+        padding:18px;
+        border-radius:12px;
+        box-shadow:0 8px 32px rgba(15,20,30,0.08)
+    }
+    h1{
+        margin:0 0 12px 0;
+        font-size:20px;
+        text-align:center
+    }
+    .form{
+        display:flex;
+        gap:8px;
+        align-items:center;
+        margin-bottom:12px
+    }
+    .form input{
+        flex:1;
+        padding:8px;
+        border-radius:8px;
+        border:1px solid #ddd
+    }
+    .form input[type="number"]{
+        width:90px
+    }
+    .form button{
+        padding:8px 12px;
+        border-radius:8px;
+        border:0;
+        background:#2563eb;
+        color:#fff;
+        cursor:pointer
+    }
+    .controls{
+        display:flex;
+        gap:8px;
+        margin-bottom:12px
+    }
+    .controls button{
+        flex:1;
+        padding:8px;
+        border-radius:8px;
+        border:0;
+        background:#e5e7eb;
+        cursor:pointer
+    }
+    #list{
+        list-style:none;
+        padding:0;
+        margin:0
+    }
+    li{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:10px;
+        border-radius:8px;
+        background:#fbfdff;
+        border:1px solid #eef2f5;
+        margin-bottom:8px
+    }
+    .item-left{
+        display:flex;
+        gap:12px;
+        align-items:center
+    }
+    .badge{
+        font-size:13px;
+        color:#6b7280
+    }
+    .btn-group button{
+        margin-left:6px;
+        padding:6px 8px;
+        border-radius:6px;
+        border:0;
+        cursor:pointer
+    }
+    .btn-buy{
+        background:#10b981;
+        color:#fff
+    }
+    .btn-bought{
+        background:#94a3b8;
+        color:#fff
+    }
+    .btn-del{
+        background:#ef4444;
+        color:#fff
+    }
+  </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Список покупок</h1>
+        <div class="form">
+            <input id="itemName" placeholder="Название товара" />
+            <input id="itemQty" type="number" min="1" value="1" />
+            <button id="addBtn">Добавить</button>
+        </div>
+        <div class="controls">
+            <button id="showBtn">Показать список</button>
+            <button id="clearBtn">Очистить список</button>
+        </div>
+        <ul id="list"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
